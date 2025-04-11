@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Parquímetro</title>
+</head>
+
+<body>
+    <main>
+        <h1>Parquímetro</h1>
+        <!-- Campo para o usuário digitar o valor -->
+        <input type="number" id="valor" placeholder="Digite o valor R$" required>
+        <!-- Botão para realizar o pagamento -->
+        <button id="calcular">Pagar</button>
+        <p id="resultado"></p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Valor</th>
+                    <th>Tempo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Valores e tempos disponíveis -->
+                <tr>
+                    <td>R$ 1,00</td>
+                    <td>30 minutos</td>
+                </tr>
+                <td>R$ 1,75</td>
+                <td>60 minutos</td>
+                </tr>
+                <tr>
+                    <td>R$ 3,00</td>
+                    <td>120 minutos <span>( Tempo máximo permitido)</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <!-- Informações de direitos autorais -->
+        <p>&copy; 2025 Ricardo Vieira. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
