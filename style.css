@@ -1,21 +1,25 @@
-/* CSS Reset */
+/* Reset básico para remover margens, paddings e ajustar box-sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Configuração de largura e altura para ocupar 100% da tela */
 html,
 body {
     width: 100%;
     height: 100%;
 }
 
+/* Estilo padrão para o corpo do documento */
 body {
     line-height: 1.5;
     font-family: Arial, sans-serif;
+    background-color: #dbdbdb;
 }
 
+/* Ajuste para elementos de mídia para ocupar o máximo de largura disponível */
 img,
 picture,
 video,
@@ -25,6 +29,7 @@ svg {
     max-width: 100%;
 }
 
+/* Garantir que inputs e botões herdem a fonte do documento */
 input,
 button,
 textarea,
@@ -32,46 +37,55 @@ select {
     font: inherit;
 }
 
+/* Remover sublinhado e cor padrão de links */
 a {
     text-decoration: none;
     color: inherit;
 }
 
+/* Remover estilo padrão de listas */
 ul,
 ol {
     list-style: none;
 }
 
+/* Estilo principal para o elemento <main>, centralizando conteúdo */
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: calc(100vh - 30px);
     padding: 10px;
-    background-color: #dbdbdb;
 }
 
+/* Estilo para o título principal dentro de <main> */
 main h1 {
     font-size: 3rem;
     margin-bottom: 40px;
     color: #02254b;
+    text-align: center;
+    background-color: #c0c1c28c;
+    padding: 5px 20px;
+    border-radius: 20px;
 }
 
+/* Estilo para inputs do tipo número */
 main input[type="number"] {
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #007bff;
     border-radius: 5px;
     font-size: 1rem;
     transition: border-color 0.3s;
     text-align: center;
 }
 
+/* Estilo para botões dentro de <main> */
 main button {
-    padding: 10px 20px;
+    padding: 10px 30px;
     background-color: #007bff;
     color: white;
     border: none;
@@ -79,32 +93,37 @@ main button {
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
+/* Caixa de resultado com bordas arredondadas e sombra */
 .resultado-box {
     background-color: #f4f4f4;
     padding: 1rem;
     border-radius: 8px;
-    margin-top: 1rem;
+    margin-top: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     font-family: Arial, sans-serif;
 }
 
+/* Estilo para parágrafos dentro da caixa de resultado */
 .resultado-box p {
     margin: 0.5rem 0;
     font-size: 1.1rem;
 }
 
+/* Estilo para texto de tempo */
 .tempo {
     color: #2c3e50;
 }
 
+/* Estilo para texto de troco */
 .troco {
     color: #27ae60;
     font-weight: bold;
 }
 
+/* Estilo para parágrafos dentro de <main> */
 main p {
     font-size: 1.5rem;
     margin-top: 20px;
@@ -112,18 +131,21 @@ main p {
     text-align: center;
 }
 
+/* Efeito hover para botões */
 main button:hover {
     background-color: #0056b3;
     transform: scale(1.05);
 }
 
+/* Estilo para tabelas dentro de <main> */
 main table {
     width: 100%;
     max-width: 600px;
     border-collapse: collapse;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
+/* Estilo para cabeçalhos de tabelas */
 main table th {
     background-color: #007bff;
     color: white;
@@ -132,6 +154,7 @@ main table th {
     font-size: 1rem;
 }
 
+/* Estilo para células de tabelas */
 main table td {
     padding: 10px 15px;
     border: 1px solid #ccc;
@@ -140,14 +163,17 @@ main table td {
     background-color: #fff;
 }
 
+/* Estilo para spans dentro de tabelas */
 table span {
     color: #ff0800;
 }
 
+/* Cor de fundo alternada para linhas pares da tabela */
 main table tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
+/* Estilo para o rodapé */
 footer {
     font-size: 0.8rem;
     color: #666;
